@@ -29,7 +29,7 @@ class YouTubePlayer extends Component{
       };
 
       return(
-        <div class="player-container">
+        <div className="player-container">
         <YouTube
           videoId={this.props.videoId}
           opts={opts}
