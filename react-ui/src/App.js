@@ -1,6 +1,15 @@
+import {BrowserRouter, Route} from 'react-router-dom';
+import Header from './components/Header';
+import About from './components/About';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+import Web from './components/Web';
+import Graphics from './components/Graphics'
+import Videos from './components/Videos';
+import Contact from './components/Contact';
 import React, { useCallback, useEffect, useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import './App.scss';
 
 function App() {
   const [message, setMessage] = useState(null);
@@ -30,38 +39,50 @@ function App() {
   }, [fetchData]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        { process.env.NODE_ENV === 'production' ?
-            <p>
-              THIS FOR THE Fourth COMMIT BUILD .
-            </p>
-          : <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-        }
-        <p>{'« '}<strong>
-          {isFetching
-            ? 'Fetching message from API'
-            : message}
-        </strong>{' »'}</p>
-        <p><a
-          className="App-link"
-          href="https://github.com/mars/heroku-cra-node"
-        >
-          React + Node deployment on Heroku
-        </a></p>
-        <p><a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a></p>
-      </header>
-    </div>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     { process.env.NODE_ENV === 'production' ?
+    //         <p>
+    //           THIS FOR THE Fourth COMMIT BUILD .
+    //         </p>
+    //       : <p>
+    //           Edit <code>src/App.js</code> and save to reload.
+    //         </p>
+    //     }
+    //     <p>{'« '}<strong>
+    //       {isFetching
+    //         ? 'Fetching message from API'
+    //         : message}
+    //     </strong>{' »'}</p>
+    //     <p><a
+    //       className="App-link"
+    //       href="https://github.com/mars/heroku-cra-node"
+    //     >
+    //       React + Node deployment on Heroku
+    //     </a></p>
+    //     <p><a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a></p>
+    //   </header>
+    // </div>
+    <BrowserRouter>
+          <div id="app">
+          <Route path='/' component={Header} />
+          <Route path='/about' component={About} />
+          <Route path='/resume' component={Resume} />
+          <Route path='/portfolio' component={Portfolio} />
+          <Route path='/portfolio/videos' component={Videos} />
+          <Route path='/portfolio/web' component={Web} />
+          <Route path='/portfolio/graphics' component={Graphics} />
+          <Route path='/contact' component={Contact} />
+          </div>
+        </BrowserRouter>
   );
 
 }

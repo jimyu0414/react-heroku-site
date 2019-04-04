@@ -1,0 +1,32 @@
+#about{
+     background: #fff;
+  .row{
+
+      @include breakpoint(m){
+        display: flex;
+        justify-content: center;
+      }
+
+  }
+  .my-avatar{
+    margin-bottom: 5rem;
+  }
+  h2 {
+     font: 22px/30px 'opensans-bold', sans-serif;
+     margin-bottom: 12px;
+  }
+}
+
+
+.my-avatar{
+  content: "";
+    background: url(./img/smoke-sheep.gif);
+    background-repeat: no-repeat;
+    background-size: 140px 178px;
+    background-position: 14px 19px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #e1e1e1;
+    margin: auto;
+}

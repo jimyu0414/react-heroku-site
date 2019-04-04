@@ -1,0 +1,136 @@
+#portfolio {
+   background: transparent;
+
+   h1 {
+      font: 15px/24px 'opensans-semibold', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 48px;
+      color: #95A3A3;
+   }
+   .canvasjs-chart-credit{
+     display: none;
+   }
+
+}
+
+.portfolio{
+  &--tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.5rem;
+
+    ul{
+      margin: 0;
+      width: 100%;
+    display: flex;
+    height: 100%;
+
+    li{
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    }
+
+
+    a{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+      padding: 2rem 1rem;
+      cursor: pointer;
+      background: #181818;
+      color: #fff;
+      display: block;
+
+      font-size: 22px;
+      line-height: 30px;
+      font-family: 'Courgette', cursive;
+      letter-spacing: 1px;
+
+      -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+
+      &:hover{
+        background: #CC5200;
+      }
+    }
+
+    .active{
+      background: #CC5200;
+    }
+
+  }
+}
+
+
+.portfolio-videos{
+  background: #fff;
+  padding: 3rem 0;
+  .row{
+    width: 100%;
+    max-width: 1024px;
+  }
+  &--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding : 0 1rem;
+    &>div{
+      margin: 1rem;
+      flex: 1;
+      text-align: center;
+      h4{
+        text-align: center;
+        @include breakpoint(m){
+          text-align: left;
+        }
+      }
+      p{
+        text-align: center;
+        @include breakpoint(m){
+          text-align: left;
+        }
+      }
+    }
+
+    iframe{
+      width: 100%;
+    }
+    
+    .player-container{
+      @include breakpoint(s){
+        min-width: 475px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .portfolio-videos iframe{
+    width: 100%;
+  }
+  .portfolio-videos--container{
+    flex-direction: column;
+  }
+  .portfolio-videos--container > div{
+    margin: 0;
+  }
+}
+
+
+.portfolio-graphic{
+  background: #fff;
+  .react-photo-gallery--gallery{
+    padding: 2rem 0;
+    div{
+      display: block !important;
+    }
+    img{
+      margin: -3px 2px !important;
+    }
+  }
+}

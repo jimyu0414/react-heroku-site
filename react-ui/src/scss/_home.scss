@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+header .banner-text .responsive-headline{
+    font-family: 'Courgette', cursive;
+    letter-spacing: 0;
+    color: #2b2928;
+    text-shadow: none;
+}
+
+header .banner-text h3{
+  text-shadow: none;
+  color: #2b2928;
+  font-family: 'Crimson Text', serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+header .banner-text .banner-text-title{
+  text-align: left;
+  display: block;
+  margin: auto;
+  width: 18rem;
+
+  @include breakpoint(m){
+    width: 37rem;
+  }
+
+  .position-title{
+    color: #CC5200;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    @include breakpoint(m){
+      display: unset;
+    }
+  }
+}
+
+.react-rotating-text-cursor{
+  color: #2b2928;
+  margin-left: .5rem;
+}
+
+header .social{
+  text-shadow: none;
+}
+
+header .social li a{
+    color: #1d1d1d;
+    &:hover{
+      color: #CC5200;
+    }
+}
+
+.vanta-canvas{
+  opacity: .75;
+}
+// a, a:visited{
+//   color: #CC5200;
+// }
+
+
+//this is for header navigation
+ul#nav li a{
+  color: #1c1c1c;
+  &:hover{
+    color: #CC5200;
+    -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+  }
+}
+
+.opaque ul#nav li a{
+  color: #fff;
+  &:hover{
+    color: #CC5200;
+  }
+}
+
+#nav-wrap:target > ul#nav{
+  background: rgba(0,0,0,0.9);
+  a{
+    color: #fff;
+  }
+}
+
+header .banner-text hr{
+  border-color: rgba(150, 150, 150, 0.2);
+}
+
+.mobile-btn{
+  cursor: pointer;
+}
+
+header{
+  background: #000 url(./img/clouds-light.jpg) no-repeat top center;
+}
