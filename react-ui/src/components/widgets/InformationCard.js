@@ -7,12 +7,11 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import image from '../../img/pa-home.jpg'
 
 const tutorialSteps = [
   {
     label: 'Peteralexander',
-    imgPath: image,
+    imgPath: this.props.PA,
   },
   {
     label: 'Bird',
@@ -29,11 +28,7 @@ const tutorialSteps = [
     imgPath:
       'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
   },
-  {
-    label: 'Goč, Serbia',
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-  },
+
 ];
 
 const styles = theme => ({
