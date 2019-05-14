@@ -32,10 +32,10 @@ import PTqv from '../img/pt-qv.jpg';
 import PTcat from '../img/pt-cat.jpg';
 import PTmenu from '../img/pt-menu.jpg';
 
-import SMhome from '../img/pa-home.jpg';
-import SMprod from '../img/pa-prod.jpg';
-import SMcart from '../img/pa-card.jpg';
-import SMcat from '../img/pa-cat.jpg';
+import SMhome from '../img/sm-home.jpg';
+import SMprod from '../img/sm-prod.jpg';
+import SMcart from '../img/sm-cart.jpg';
+import SMcat from '../img/sm-cat.jpg';
 
 class Web extends Component {
 
@@ -100,14 +100,12 @@ class Web extends Component {
     <Element name="scroll-web">
     <div className="portfolio-web">
       <WebSiteCard image = {peter} navTo = 'https://www.peteralexander.com.au' />
+      <WebSiteCard image = {smiggle} navTo='https://www.smiggle.com.au/shop/en/smiggle'/>
+      <WebSiteCard image = {jayjays} navTo='https://www.jayjays.com.au/shop/en/jayjays' />
+      <WebSiteCard image = {justjeans} navTo='https://www.justjeans.com.au/shop/en/justjeans'/>
       <WebSiteCard image = {dotti} navTo = 'https://www.dotti.com.au/shop/en/dotti'/>
       <WebSiteCard image = {jacquie} navTo = 'https://www.jacquie.com.au/shop/en/jacquie'/>
-      <WebSiteCard image = {justjeans} navTo='https://www.justjeans.com.au/shop/en/justjeans'/>
-      <WebSiteCard image = {jayjays} navTo='https://www.jayjays.com.au/shop/en/jayjays' />
       <WebSiteCard image = {portmans} navTo='https://www.portmans.com.au/shop/en/portmans'/>
-      <WebSiteCard image = {smiggle} navTo='https://www.smiggle.com.au/shop/en/smiggle'/>
-    
-    
     </div>
       </Element>
     );

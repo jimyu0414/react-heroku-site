@@ -57,16 +57,16 @@ class InformationCard extends React.Component {
         imgPath: image[0].link,
       },
       {
-        label: 'product page',
-        imgPath: image[1],
+        label: image[1].title,
+        imgPath: image[1].link,
       },
       {
-        label: 'Popup',
-        imgPath: image[2],
+        label: image[2].title,
+        imgPath: image[2].link,
       },
       {
-        label: 'cat',
-        imgPath: image[3],
+        label: image[3].title,
+        imgPath: image[3].link,
       },
     
     ];
