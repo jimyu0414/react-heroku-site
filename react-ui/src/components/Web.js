@@ -99,11 +99,15 @@ class Web extends Component {
 
     <Element name="scroll-web">
     <div className="portfolio-web">
-      <WebSiteCard image = {peter}/>
-      {/* <WebSiteCard />
-      <WebSiteCard />
-      <WebSiteCard />
-      <WebSiteCard /> */}
+      <WebSiteCard image = {peter} navTo = 'https://www.peteralexander.com.au' />
+      <WebSiteCard image = {dotti} navTo = 'https://www.dotti.com.au/shop/en/dotti'/>
+      <WebSiteCard image = {jacquie} navTo = 'https://www.jacquie.com.au/shop/en/jacquie'/>
+      <WebSiteCard image = {justjeans} navTo='https://www.justjeans.com.au/shop/en/justjeans'/>
+      <WebSiteCard image = {jayjays} navTo='https://www.jayjays.com.au/shop/en/jayjays' />
+      <WebSiteCard image = {portmans} navTo='https://www.portmans.com.au/shop/en/portmans'/>
+      <WebSiteCard image = {smiggle} navTo='https://www.smiggle.com.au/shop/en/smiggle'/>
+    
+    
     </div>
       </Element>
     );

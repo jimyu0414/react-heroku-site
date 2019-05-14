@@ -50,11 +50,11 @@ class InformationCard extends React.Component {
 
   render() {
 
-    const { classes, theme , image} = this.props;
+    const { classes, theme , image, navTo} = this.props;
     const tutorialSteps = [
       {
-        label: 'Home',
-        imgPath: image[0],
+        label: image[0].title,
+        imgPath: image[0].link,
       },
       {
         label: 'product page',
@@ -79,7 +79,7 @@ class InformationCard extends React.Component {
         <Paper square elevation={0} className={classes.header}>
           <Typography>{tutorialSteps[activeStep].label}</Typography>
         </Paper>
-        <a href="https://www.google.com">
+        <a href={navTo}>
         <img
           className={classes.img}
           src={tutorialSteps[activeStep].imgPath}
