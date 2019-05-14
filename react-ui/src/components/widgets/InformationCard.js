@@ -8,28 +8,7 @@ import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
-const tutorialSteps = [
-  {
-    label: 'Peteralexander',
-    imgPath: this.props.PA,
-  },
-  {
-    label: 'Bird',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-  {
-    label: 'Bali, Indonesia',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
-  },
-  {
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
-  },
 
-];
 
 const styles = theme => ({
   root: {
@@ -70,8 +49,28 @@ class InformationCard extends React.Component {
   };
 
   render() {
-    const { classes, theme } = this.props;
-    console.log(this.props);
+
+    const { classes, theme , image} = this.props;
+    const tutorialSteps = [
+      {
+        label: 'Home',
+        imgPath: image[0],
+      },
+      {
+        label: 'product page',
+        imgPath: image[1],
+      },
+      {
+        label: 'Popup',
+        imgPath: image[2],
+      },
+      {
+        label: 'cat',
+        imgPath: image[3],
+      },
+    
+    ];
+
     const { activeStep } = this.state;
     const maxSteps = tutorialSteps.length;
     const clsname = classes.root + " card-wrapper";

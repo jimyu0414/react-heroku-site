@@ -60,6 +60,13 @@ class Videos extends Component {
         videoId="S9pJBs0nUaE"
         videoDesc="After Effects 2018 CC 的自带渲染队列里好像取消了h264 mp4的视频格式选项。 但是h264一向都是上传视频网站的最佳视频格式。 这个视频来教大家如何用Media Encoder去渲染After effects的视频文件"
         />
+
+        <YouTubePlayer
+        videoTitle="VLOG-03 | 我的30岁，是否和你一样？ | A video for me stepping into 30s"
+        videoId="ZCAYWXWy7vI"
+        videoDesc="今天的我正式步入了30， 想着做一期视频吧， 来分享一些我30岁的感受和我30岁的生活状态。 等老了以后，回看现在的自己，应该很有趣吧。"
+        />
+
         </div>
         </div>
       </div>

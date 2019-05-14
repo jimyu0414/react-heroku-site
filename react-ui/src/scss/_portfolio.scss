@@ -144,5 +144,9 @@
   .card-wrapper{
     flex-basis: 30%;
     margin: 5px 5px;
+
+    img{
+      height: auto;
+    }
   }
 }

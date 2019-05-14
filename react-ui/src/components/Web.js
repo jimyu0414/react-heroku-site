@@ -53,15 +53,57 @@ class Web extends Component {
   
 
   render(){
+    const peter = [ 
+      {title: 'Peteralexander Home Page', link: PAhome},
+      {title: 'Product Page', link: PAprod},
+      {title: 'Popup Modal', link: PAcard},
+      {title: 'Category page', link: PAcat}
+    ]
+    const dotti = [ 
+      {title: 'Dotti Home Page', link: DThome},
+      {title: 'Popup / Modal', link: DTcard},
+      {title: 'Menu', link: DTmenu},
+      {title: 'Bag Page', link: DTbag}
+    ]
+    const jacquie = [ 
+      {title: 'JacquiE Home Page', link: JEhome},
+      {title: 'Store Page', link: JEstore},
+      {title: 'Category Page', link: JEcat},
+      {title: 'Sign in Page', link: JEsign}
+    ]
+    const justjeans = [ 
+      {title: 'Just Jeans Home Page', link: JNhome},
+      {title: 'Navigation', link: JNnav},
+      {title: 'Popup Modal', link: JNcard},
+      {title: 'Category page', link: JNsave}
+    ]
+    const jayjays = [ 
+      {title: 'Jayjays Home Page', link: JJhome},
+      {title: 'Product Page', link: JJprod},
+      {title: 'Quick view / Modal', link: JJqv},
+      {title: 'About page', link: JJabout}
+    ]
+    const portmans = [ 
+      {title: 'Portmans Home Page', link: PThome},
+      {title: 'Menu Page', link: PTmenu},
+      {title: 'Category Page', link: PTcat},
+      {title: 'Quick view', link: PTqv}
+    ]
+    const smiggle = [ 
+      {title: 'Smiggle Home Page', link: SMhome},
+      {title: 'Product Page', link: SMprod},
+      {title: 'Shopping Cart', link: SMcart},
+      {title: 'Category page', link: SMcat}
+    ]
     return(
 
     <Element name="scroll-web">
     <div className="portfolio-web">
-      <WebSiteCard PA = {PAhome}/>
+      <WebSiteCard image = {peter}/>
+      {/* <WebSiteCard />
       <WebSiteCard />
       <WebSiteCard />
-      <WebSiteCard />
-      <WebSiteCard />
+      <WebSiteCard /> */}
     </div>
       </Element>
     );
