@@ -16,7 +16,7 @@ class Header extends Component{
           <a className="mobile-btn" href="#nav" title="Hide navigation">Hide navigation</a>
 
             <ul id="nav" className="nav">
-               <li className="current"><NavLink to="/home">Home</NavLink></li>
+               {/* <li className="current"><NavLink to="/home">Home</NavLink></li> */}
                <li><NavLink exact to="/about">About</NavLink></li>
                <li><NavLink exact to="/resume">Resume</NavLink></li>
                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
