@@ -100,10 +100,11 @@
     iframe{
       width: 100%;
     }
-    
+
     .player-container{
       @include breakpoint(s){
         min-width: 475px;
+        max-width: 500px;
       }
     }
   }

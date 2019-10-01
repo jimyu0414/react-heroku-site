@@ -67,6 +67,18 @@ class Videos extends Component {
         videoDesc="今天的我正式步入了30， 想着做一期视频吧， 来分享一些我30岁的感受和我30岁的生活状态。 等老了以后，回看现在的自己，应该很有趣吧。"
         />
 
+        <YouTubePlayer
+        videoTitle="VLOG-08.3 新西兰滑雪之旅终章 | Treble Cone，Ohau 爬山 | 轻度越野"
+        videoId="rGY8f_TeeUg"
+        videoDesc="记录了我们在新西兰滑雪的最后几天， 记录了Treble Cone，Ohau和路上的美丽风景。"
+        />
+
+        <YouTubePlayer
+        videoTitle="Vlog | Snowboarders Are Awesome"
+        videoId="1RrOA_3tRog"
+        videoDesc="每当我在雪场上飞驰的时候：朋友眼中的我：他又开始装b了。雪场里的人眼中的我：这个人滑的还行吧，好像动作不规范唉。工作人员眼中的我：这个人需要留意，一会儿可能拉去急诊。老妈眼中的我： 还行吧，不错的爱好。老婆眼中的我： 我靠，他又自己去浪了。我自己眼中的我：哇靠，我帅呆了！"
+        />
+
         </div>
         </div>
       </div>
